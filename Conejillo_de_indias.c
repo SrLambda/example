@@ -3,22 +3,26 @@
 
 int main(){
 	
-	int a,b,i,op;
-	i=1;
-	
+	int i,op;
+	double a,b;
+
 	printf("\n");
 	printf("Esta es una calculadora diseñada para el calculo con dos valores");
 	printf("\n");
 	printf("\n");
+	
 	Sleep(2000);
+
+	i=1;
+
 	while (i != 0){
 
 		printf("Ingrese el primer numero: ");
-		scanf("%d" , &a );
+		scanf("%lf" , &a );
 		printf("\n");
 	
 		printf("Ingrese el segundo numero: " );
-		scanf("%d" , &b );
+		scanf("%lf" , &b );
 		printf("\n");
 	
 		printf("Ingrese la letra de la operacion que desea realiza\n");
@@ -31,18 +35,19 @@ int main(){
 		printf("Ingrese el numero de la operacion que desea realizar: ");
 		scanf("%d" , &op );
 		printf("\n");
+		
 		switch(op){
 			case 1:
-				printf("El valor de la suma es: %d\n",(a+b) );
+				printf("El valor de la suma es: %.1lf\n",(a+b) );
 				break;
 			case 2:
-				printf("El valor de la resta es: %d\n",(a-b) );
+				printf("El valor de la resta es: %.1lf\n",(a-b) );
 				break;
 			case 3:
-				printf("El valor de la multiplicacion es: %d\n",(a*b) );
+				printf("El valor de la multiplicacion es: %.1lf\n",(a*b) );
 				break;
 			case 4:
-				printf("El valor de la divison es: %d\n",(a/b) );
+				printf("El valor de la divison es: %.1lf\n",(a/b) );
 				break;
 			default:
 				printf("La letra ingresada no es valida");
