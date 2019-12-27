@@ -2,18 +2,19 @@
 
 int main(){
 	
-	int a,b,i,op;//cambio
-	i=1;
-	
+	int i,op;
+	double a,b;
+
 	printf("\n");
+	i=1;
 	while (i != 0){
 
 		printf("Ingrese el primer numero: ");
-		scanf("%d" , &a );//cambio
+		scanf("%lf" , &a );//cambio
 		printf("\n");
 	
 		printf("Ingrese el segundo numero: " );
-		scanf("%d" , &b );//cambio
+		scanf("%lf" , &b );//cambio
 		printf("\n");
 	
 		printf("Ingrese la letra de la operacion que desea realiza\n");
@@ -28,16 +29,16 @@ int main(){
 		printf("\n");
 		switch(op){
 			case 1:
-				printf("El valor de la suma es: %d\n",(a+b) );//cambio
+				printf("El valor de la suma es: %.1lf\n",(a+b) );//cambio
 				break;
 			case 2:
-				printf("El valor de la resta es: %d\n",(a-b) );//cambio
+				printf("El valor de la resta es: %.1lf\n",(a-b) );//cambio
 				break;
 			case 3:
-				printf("El valor de la multiplicacion es: %d\n",(a*b) );//cambio
+				printf("El valor de la multiplicacion es: %.1lf\n",(a*b) );//cambio
 				break;
 			case 4:
-				printf("El valor de la divison es: %d\n",(a/b) );//cambio
+				printf("El valor de la divison es: %.1lf\n",(a/b) );//cambio
 				break;
 			default:
 				printf("La letra ingresada no es valida");
@@ -47,7 +48,7 @@ int main(){
 		printf("|||||||||||||||||||||||||||\n");
 		printf("|||Ingrese 0 para cerrar|||\n");
 		printf("|||||||||||||||||||||||||||\n");
-		printf("¿Desea cerrar el programa? ");
+		printf("Desea cerrar el programa? ");
 		scanf("%d" , &i );
 		printf("\n");
 		printf("\n");
