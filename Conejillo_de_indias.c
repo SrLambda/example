@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 
 int main(){
 	
@@ -6,6 +7,10 @@ int main(){
 	i=1;
 	
 	printf("\n");
+	printf("Esta es una calculadora diseñada para el calculo con dos valores");
+	printf("\n");
+	printf("\n");
+	Sleep(2000);
 	while (i != 0){
 
 		printf("Ingrese el primer numero: ");
