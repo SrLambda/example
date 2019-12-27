@@ -2,7 +2,7 @@
 
 int main(){
 	
-	int a,b;
+	int a,b,op;
 	
 	printf("Ingrese el primer numero: ");
 	scanf("%d" , &a );
@@ -12,12 +12,32 @@ int main(){
 	scanf("%d" , &b );
 	printf("\n");
 	
-	if( a%b == 0){
-		printf("Los numeros son divisibles");
+	printf("Ingrese la letra de la operacion que desea realiza\n");
+	printf("||||||||||||||||||||||\n");
+	printf("|||1=suma          |||\n");
+	printf("|||2=resta         |||\n");
+	printf("|||3=multiplicacion|||\n");
+	printf("|||4=division      |||\n");
+	printf("||||||||||||||||||||||\n");
+	printf("Ingrese el numero de la operacion que desea realizar: ");
+	scanf("%d" , &op );
+	printf("\n");
+	switch(op){
+		case 1:
+			printf("El valor de la suma es: %d\n",(a+b) );
+			break;
+		case 2:
+			printf("El valor de la resta es: %d\n",(a-b) );
+			break;
+		case 3:
+			printf("El valor de la multiplicacion es: %d\n",(a*b) );
+			break;
+		case 4:
+			printf("El valor de la divison es: %d\n",(a/b) );
+			break;
+		default:
+			printf("La letra ingresada no es valida");
+			break;
 	}
-	else{
-		printf("Los numeros no son divisibles");
-	}
-	
 	return 0;
 }
