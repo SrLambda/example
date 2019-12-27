@@ -49,10 +49,11 @@ int main(){
 				break;
 		}
 		
-		printf("|||||||||||||||||||||||||||\n");
-		printf("|||Ingrese 0 para cerrar|||\n");
-		printf("|||||||||||||||||||||||||||\n");
-		printf("¿Desea cerrar el programa? ");
+		printf("||||||||||||||||||||||||||||||||||||\n");
+		printf("|||Ingrese 0 para cerrar         |||\n");
+		printf("|||Si no ingrese cualquier numero|||\n");
+		printf("||||||||||||||||||||||||||||||||||||\n");
+		printf("Desea cerrar el programa? ");
 		scanf("%d" , &i );
 		printf("\n");
 		printf("\n");
